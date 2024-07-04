@@ -1,0 +1,22 @@
+import = [
+    "~/.config/alacritty/gruvbox-dark.toml"
+]
+
+shell = { program =  "/usr/local/bin/fish", args = ["-l", "-c", "tmux attach || tmux",] }
+
+[window]
+startup_mode = "Maximized"
+
+padding.x = 3
+padding.y = 5
+
+decorations = "None"
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Thin" }
+size = 16
+offset = { x = 0, y = 0 }
+
+[mouse]
+hide_when_typing = true
+
