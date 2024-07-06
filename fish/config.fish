@@ -15,4 +15,4 @@ alias sftp-macmini='sftp elias@192.168.1.12'
 alias vim=nvim
 alias a='echo Anna is cute'
 
-theme_gruvbox dark
+# theme_gruvbox dark
