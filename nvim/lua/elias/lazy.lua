@@ -15,7 +15,7 @@ require("lazy").setup({
   { import = "elias.plugins" },
 }, {
   install = {
-    colorscheme = { "catppuccin" },
+    colorscheme = { "gruvbox" },
   },
   checker = {
     enabled = true,

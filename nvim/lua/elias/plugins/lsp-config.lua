@@ -11,7 +11,7 @@ return {
             require("mason-lspconfig").setup({
                 ensure_installed = {
                     "lua_ls",
-                    "omnisharp",
+                    "csharp_ls",
                     "clangd",
                     "html",
                     "cssls",
@@ -28,7 +28,7 @@ return {
             lspconfig.lua_ls.setup({
                 capabilities = capabilities
             })
-            lspconfig.omnisharp.setup({
+            lspconfig.csharp_ls.setup({
                 capabilities = capabilities
             })
             lspconfig.clangd.setup({

@@ -1,4 +1,4 @@
-local opt = vim.opt -- for conciseness
+local opt = vim.opt
 
 -- line numbers
 opt.relativenumber = true
@@ -23,7 +23,7 @@ opt.cursorline = true
 -- appearance
 opt.termguicolors = true
 opt.background = "dark"
-opt.signcolumn = "yes"
+opt.signcolumn = "auto"
 
 -- backspace
 opt.backspace = "indent,eol,start"
