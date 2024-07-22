@@ -1,38 +1,56 @@
-local opt = vim.opt
+vim.g.have_nerd_font = true
 
 -- line numbers
-opt.relativenumber = true
-opt.number = true
+vim.opt.number = true
+vim.opt.relativenumber = true
 
 -- tabs & indentation
-opt.tabstop = 4
-opt.shiftwidth = 4
-opt.expandtab = true
-opt.autoindent = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.autoindent = true
 
 -- line wrapping
-opt.wrap = false
+vim.opt.wrap = false
 
 -- search settings
-opt.ignorecase = true
-opt.smartcase = true
-
--- cursor line
-opt.cursorline = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 -- appearance
-opt.termguicolors = true
-opt.background = "dark"
-opt.signcolumn = "auto"
+vim.opt.termguicolors = true
+vim.opt.cursorline = true
+vim.opt.showmode = false
+vim.opt.background = "dark"
+vim.opt.signcolumn = "yes"
 
 -- backspace
-opt.backspace = "indent,eol,start"
+vim.opt.backspace = "indent,eol,start"
 
 -- clipboard
-opt.clipboard:append("unnamedplus")
+vim.opt.clipboard:append("unnamedplus")
 
 -- split windows
-opt.splitright = true
-opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.splitbelow = true
 
-opt.iskeyword:append("-")
+vim.opt.iskeyword:append("-")
+
+-- test the following:
+
+-- reduce timeout for keymaps
+vim.opt.timeoutlen = 300
+
+-- save undo history. Apparently?
+vim.opt.undofile = true
+
+-- Sets how neovim will display certain whitespace characters in the editor.
+--  See `:help 'list'`
+--  and `:help 'listchars'`
+vim.opt.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+
+vim.opt.inccommand = 'split'
+
+-- I'm ambivalent. It's kinda nice but also kinda weird
+vim.opt.scrolloff = 10

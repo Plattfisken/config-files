@@ -15,3 +15,5 @@ alias sp='cd ~/Skolgrejer/Projekt'
 alias vim=nvim
 alias a='echo Anna is cute'
 
+# initializing zoxide and binding cd to it
+zoxide init fish --cmd cd | source

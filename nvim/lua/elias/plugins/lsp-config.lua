@@ -15,7 +15,7 @@ return {
                     "clangd",
                     "html",
                     "cssls",
-                    "tsserver"
+                    "tsserver",
                 },
             })
         end,
