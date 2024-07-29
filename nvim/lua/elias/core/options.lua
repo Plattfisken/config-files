@@ -50,7 +50,7 @@ vim.opt.undofile = true
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
-vim.opt.inccommand = 'split'
+vim.opt.inccommand = 'split' -- idk
 
 -- I'm ambivalent. It's kinda nice but also kinda weird
 vim.opt.scrolloff = 10
