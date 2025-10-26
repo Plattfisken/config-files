@@ -1,22 +1,23 @@
-import = [
-    "~/.config/alacritty/gruvbox-dark.toml"
-]
-
-shell = { program =  "/usr/local/bin/fish", args = ["-l", "-c", "tmux attach || tmux",] }
-
 [window]
 startup_mode = "Maximized"
-
-padding.x = 3
-padding.y = 5
-
 decorations = "None"
+option_as_alt = "OnlyRight"
+# opacity = 0.8
+# blur = true
+
+# even tho padding defaults to 0 theres a bit of padding at the bottom and to the right, this spreads it out evenly instead
+dynamic_padding = true 
+
+[colors.primary]
+background = "#181818"
+foreground = "#c0c0c0"
 
 [font]
-normal = { family = "JetBrainsMono Nerd Font", style = "Thin" }
-size = 16
-offset = { x = 0, y = 0 }
+normal.family = "Hack"
+size = 15.4
 
 [mouse]
 hide_when_typing = true
 
+[terminal]
+shell = { program =  "/usr/local/bin/fish", args = ["-l", "-c", "tmux attach || tmux"] }
